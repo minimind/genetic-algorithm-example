@@ -7,7 +7,7 @@ So I had to use either Python or LISP, and Python won.
 The example shown creates a population of numbers and evolves a population with lower numbers.
 Pretty basic.
 
-I got it down to 17 lines of easy-to-read Python and I'd like to hear very much if anyone
+I got it down to less that 60 lines of easy-to-read PEP8 Python and I'd like to hear very much if anyone
 can do it in less without cheating.
 
 ## Contributors
