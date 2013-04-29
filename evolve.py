@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import random
 import bisect
 
@@ -15,10 +17,10 @@ def trial(i):
 ##################################################
 
 def run_trials(population, trial_fn):
-    return [(trial_fn(x),x) for x in population]
+    return [(trial_fn(x), x) for x in population]
 
 def create_next_population(population_with_fitness, mutate_fn):
-    population_with_fitness.sort(key=lambda k : (k[0]))
+    population_with_fitness.sort(key = lambda k : (k[0]))
     sorted_population = [x[1] for x in population_with_fitness]
 
     rank_selection = []
@@ -41,8 +43,8 @@ def start_evolving(initialise_genotypes_fn, mutate_fn, trial_fn):
     population = initialise_genotypes_fn()
 
     for i in xrange(1000): # 1000 generations
-        population_with_fitness = run_trials( population, trial_fn )
-        population = create_next_population( population_with_fitness, mutate_fn )
+        population_with_fitness = run_trials(population, trial_fn)
+        population = create_next_population(population_with_fitness, mutate_fn)
 
     for i in population:
         print i
