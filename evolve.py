@@ -49,8 +49,5 @@ def start_evolving(initialise_genotypes_fn, mutate_fn, trial_fn):
     for i in population:
         print i
 
-def main():
-    start_evolving(initialise_genotypes, mutate, trial)
-
 if __name__ == "__main__":
-    main()
+    start_evolving(initialise_genotypes, mutate, trial)
