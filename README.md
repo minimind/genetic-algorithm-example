@@ -1,16 +1,7 @@
-# Very Simple Genetic Algorithm in Python
+# Short Genetic Algorithm
 
-I wanted to write the simplest genetic algorithm program I could that was still useful.
-This means it had to have abstract genotypes, mutation operators, and trials.
-So I had to use either Python or LISP, and Python won.
+This is a simple [Rank Selection](http://watchmaker.uncommons.org/manual/ch03s03.html "Random page describing Rank Selection")
+-based genetic algorithm written as an example.
 
-The example shown creates a population of numbers and evolves a population with lower numbers.
-Pretty basic.
-
-I got it down to less that 60 lines of easy-to-read PEP8 Python and I'd like to hear very much if anyone
-can do it in less without cheating.
-
-## Contributors
-
-ian.macinnes@gmail.com http://www.ianmacinnes.net
-andy@andybak.net https://github.com/andybak
+The example genotype, mutation operator, and fitness function shows a population
+of random numbers evolving to a population of smaller numbers.
